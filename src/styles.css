@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaf6ff;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  background-color: #2e64db;
+  height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: white 8px solid;
+  margin-bottom: auto;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.painelEsquerda,
+.painelDireita {
+  background-color: white;
+  border: 1px solid #c3d4e6;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.painelEsquerda {
+  flex: 1;
+  max-width: 400px;
+}
+
+.painelDireita {
+  flex: 2;
+  min-height: 400px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #dfe9f6;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.tecnicaMemoria {
+  display: flex;
+  margin-top: 10px;
+}
+
+.tecnicaMemoria button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #dfe9f6;
+  color: #2e64db;
+  font-weight: 600;
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tecnicaMemoria button.active {
+  background-color: #2e64db;
+  color: white;
+}
+
+.addtarefa {
+  background-color: #0057ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.addtarefa span {
+  margin-left: 5px;
+}
+
+.listaTarefa {
+  background-color: white;
+  border: 1px solid #c3d4e6;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.listaTarefa div {
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.listaTarefa .gray {
+  color: #aaa;
+}
+
+.butaoBaixo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.butaoBaixo button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.iniciar {
+  background-color: #22b00f;
+}
+
+.parar {
+  background-color: #e30b0b;
+}
+
+.iniciar::after {
+  content: '\2B06';
+  margin-left: 10px;
+}
+
+.parar::after {
+  content: '\23F8';
+  margin-left: 10px;
+}
